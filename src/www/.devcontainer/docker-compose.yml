@@ -1,0 +1,15 @@
+version: '3'
+services:
+  www:
+    build: ./
+    ports:
+      - 8080:80
+
+    volumes:
+      #Swap the folder path for plugin vs theme development
+      - ../html:/var/www/html
+      - ../.vscode:/var/www/html/.vscode
+      # - ./apache2:/etc/apache2/from-host
+
+volumes:
+  www:
