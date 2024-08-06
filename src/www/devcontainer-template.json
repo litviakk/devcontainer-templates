@@ -1,0 +1,11 @@
+{
+    "id": "www",
+    "version": "1.0.0",
+    "name": "A Simple HTTP Server (WWW)",
+    "description": "Apache HTTP Server with some basic HTML page",
+    "documentationURL": "https://github.com/litviakk/devcontainer-templates/tree/main/src/www",
+    "licenseURL": "https://github.com/litviakk/devcontainer-templates/blob/main/LICENSE",
+    "platforms": [
+        "Any"
+    ]
+}

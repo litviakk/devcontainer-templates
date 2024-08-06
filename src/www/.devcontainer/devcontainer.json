@@ -1,0 +1,17 @@
+{
+	"name": "WWW",
+
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "www",
+
+	// Uncomment the appropriate line depending on plugin vs theme development.
+	// This should match the active volume mount in docker-compose.yml
+	"workspaceFolder": "/var/www/html",
+	"containerEnv": {
+		"HOST_WORKDIR": "${workspaceFolder}"
+    },
+	
+	"forwardPorts": [80, 8080],
+	"remoteUser": "vscode",
+	"postStartCommand": "tail -f /var/log/apache2/other_vhosts_access.log"
+}
