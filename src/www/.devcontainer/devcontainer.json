@@ -12,6 +12,6 @@
     },
 	
 	"forwardPorts": [80, 8080],
-	"remoteUser": "vscode",
-	"postStartCommand": "tail -f /var/log/apache2/other_vhosts_access.log"
+	"remoteUser": "vscode"
+	// "postStartCommand": "tail -f /var/log/apache2/other_vhosts_access.log"
 }
