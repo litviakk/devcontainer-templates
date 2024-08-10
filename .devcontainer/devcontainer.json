@@ -13,6 +13,13 @@
 		},
 		"ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {}
 	},
+	
+	"mounts": [
+		"type=bind,source=${localEnv:HOME}/.ssh,target=/root/.ssh,readonly"
+	],
+	
+	// "initializeCommand": "gh auth login",
+	// "initializeCommand": "gh extension install https://github.com/nektos/gh-act",
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [8080, 8080]
